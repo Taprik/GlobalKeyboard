@@ -1,7 +1,7 @@
 //version 1.0, 11/2015, Patrick Suche
 
 import com.cycling74.max.*;
-import java.util.Random;
+import java.util.logging.*;
 import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
@@ -37,6 +37,10 @@ public class globalKeyboard extends MaxObject implements NativeKeyListener {
 	//////////////
 
 	public void start(){
+		//no log message please
+		final Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
+		logger.setLevel(Level.OFF);	
+		//start NativeHook
 		try {
 			GlobalScreen.registerNativeHook();
 		}
@@ -44,15 +48,26 @@ public class globalKeyboard extends MaxObject implements NativeKeyListener {
 			post("There was a problem registering the native hook.");
 			post(ex.getMessage());
 		}
-
+		//start the listener
 		GlobalScreen.addNativeKeyListener(this);
 	}
 
 	////////////////
 	public void stop(){
+		//stop the listener
 		GlobalScreen.removeNativeKeyListener(this);
+		//Stop the nativeHook
+		try {
+			GlobalScreen.unregisterNativeHook();
+		}
+		catch (NativeHookException ex) {
+			post("There was a problem unregistering the native hook.");
+			post(ex.getMessage());
+		}
 	}
 }
+
+
 
 
 

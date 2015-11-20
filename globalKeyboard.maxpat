@@ -42,8 +42,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 74.0, 441.0, 5.0 ],
-					"presentation_rect" : [ 21.0, 74.0, 0.0, 0.0 ]
+					"patching_rect" : [ 20.0, 74.0, 441.0, 5.0 ]
 				}
 
 			}
@@ -65,7 +64,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 355.0, 222.5, 124.0, 33.0 ],
-					"presentation_rect" : [ 357.0, 223.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "View and/or improve the source"
 				}
@@ -79,7 +77,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 46.0, 222.5, 88.0, 33.0 ],
-					"presentation_rect" : [ 24.0, 189.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Start or stop the listener"
 				}
@@ -92,7 +89,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 146.0, 423.0, 20.0 ],
-					"presentation_rect" : [ 21.0, 124.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "version 1.0, 11/2015, by Patrick Suchet"
 				}
@@ -106,7 +102,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.0, 103.0, 423.0, 33.0 ],
-					"presentation_rect" : [ 22.0, 109.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "It's based on the library jnativehook : https://github.com/kwhat/jnativehook\nYOU NEED to put the library in the right place"
 				}
@@ -119,7 +114,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 195.0, 365.0, 66.0, 20.0 ],
-					"presentation_rect" : [ 194.0, 317.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "keyup"
 				}
@@ -215,7 +209,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 130.0, 459.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "G"
+					"text" : "S"
 				}
 
 			}
@@ -254,7 +248,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 161.0, 284.0, 327.0, 22.0 ],
 					"style" : "",
-					"text" : "mxj globalMouse @autostart 1"
+					"text" : "mxj globalKeyboard @autostart 1"
 				}
 
 			}
