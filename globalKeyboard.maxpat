@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 190.0, 212.0, 65.0, 22.0 ],
+					"style" : "",
+					"text" : "closebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "live.line",
 					"numinlets" : 1,
@@ -63,7 +76,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 355.0, 222.5, 124.0, 33.0 ],
+					"patching_rect" : [ 355.0, 237.5, 124.0, 33.0 ],
 					"style" : "",
 					"text" : "View and/or improve the source"
 				}
@@ -76,7 +89,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 222.5, 88.0, 33.0 ],
+					"patching_rect" : [ 46.0, 237.5, 88.0, 33.0 ],
 					"style" : "",
 					"text" : "Start or stop the listener"
 				}
@@ -113,7 +126,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 365.0, 66.0, 20.0 ],
+					"patching_rect" : [ 195.0, 380.0, 66.0, 20.0 ],
 					"style" : "",
 					"text" : "keyup"
 				}
@@ -166,7 +179,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 190.0, 228.0, 33.0, 22.0 ],
+					"patching_rect" : [ 190.0, 243.0, 33.0, 22.0 ],
 					"style" : "",
 					"text" : "stop"
 				}
@@ -180,7 +193,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 335.333344, 346.0, 50.0, 35.0 ],
+					"patching_rect" : [ 335.333344, 361.0, 50.0, 35.0 ],
 					"style" : "",
 					"text" : "Undefined"
 				}
@@ -189,14 +202,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 232.666672, 401.0, 50.0, 35.0 ],
+					"patching_rect" : [ 232.666672, 416.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "\"Left Meta\""
+					"text" : "→"
 				}
 
 			}
@@ -220,7 +232,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.0, 228.0, 34.0, 22.0 ],
+					"patching_rect" : [ 146.0, 243.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "start"
 				}
@@ -233,7 +245,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 265.0, 228.0, 71.0, 22.0 ],
+					"patching_rect" : [ 265.0, 243.0, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "viewsource"
 				}
@@ -246,7 +258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 161.0, 284.0, 327.0, 22.0 ],
+					"patching_rect" : [ 161.0, 299.0, 327.0, 22.0 ],
 					"style" : "",
 					"text" : "mxj globalKeyboard @autostart 1"
 				}
@@ -286,6 +298,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
